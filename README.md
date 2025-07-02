@@ -7,8 +7,13 @@
 
 ## Installation
 
-1. Cloner le dépôt
-2. Installer les dépendances:
+Cloner le dépôt
+
+```zsh
+git clone git@github.com:younes101020/test-technique.git
+```
+
+Installer les dépendances:
 
 ```zsh
 pnpm install
