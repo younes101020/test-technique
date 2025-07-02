@@ -11,6 +11,7 @@ Cloner le dépôt
 
 ```zsh
 git clone git@github.com:younes101020/test-technique.git
+cd test-technique
 ```
 
 Installer les dépendances:
