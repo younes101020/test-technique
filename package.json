@@ -4,8 +4,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "seed": "turbo run seed",
-    "reset": "turbo run reset",
+    "db:push": "turbo run push",
+    "db:seed": "turbo run seed",
     "start": "turbo run start"
   },
   "devDependencies": {

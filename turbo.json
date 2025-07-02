@@ -19,7 +19,7 @@
     "seed": {
       "cache": false
     },
-    "reset": {
+    "push": {
       "cache": false
     }
   }

@@ -3,7 +3,7 @@
 ## Prérequis
 
 - Node
-- Docker ou Postgres
+- Docker compose ou Postgres
 
 ## Installation
 
@@ -33,13 +33,12 @@ echo "$(cat .env.example)" > .env
 echo "$(cat .env.example)" > apps/api/.env
 
 # lancer la base de donnée
-docker run -d \
-  --name db-test \
-  --shm-size=128m \
-  -e POSTGRES_PASSWORD="${POSTGRES_PASSWORD}" \
-  -e POSTGRES_USER=test \
-  -p 5432:5432 \
-  postgres:14.18-bookworm
+docker compose -f compose.yml up -d
+
+# Appliquer le schema vers la base de donnée
+pnpm db:push
+# Remplir la base de donnée
+pnpm db:seed
 ```
 
 ## Démarrer l'application
@@ -47,8 +46,10 @@ docker run -d \
 ```zsh
 # Environnement de développement
 pnpm dev
+# allez vers http://localhost:3000
 
 # Simuler l'environnement de production
 pnpm build
 pnpm start
+# allez vers http://localhost:8787
 ```
