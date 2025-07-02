@@ -1,0 +1,14 @@
+{
+  "name": "test-technique",
+  "packageManager": "pnpm@10.12.3",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "seed": "turbo run seed",
+    "reset": "turbo run reset",
+    "start": "turbo run start"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4"
+  }
+}
