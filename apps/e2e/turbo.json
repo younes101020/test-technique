@@ -1,0 +1,9 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "test": {
+      "with": ["api#start"],
+      "dependsOn": ["frontend#build"]
+    }
+  }
+}

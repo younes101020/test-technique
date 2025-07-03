@@ -53,3 +53,9 @@ pnpm build
 pnpm start
 # allez vers http://localhost:8787
 ```
+
+## Lancer les tests end-to-end
+
+```zsh
+pnpm test
+```

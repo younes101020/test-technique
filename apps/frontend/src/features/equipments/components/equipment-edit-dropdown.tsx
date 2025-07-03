@@ -20,14 +20,14 @@ export function EquipmentEditDropdown(props: EquipmentDropdownProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="border-0">
+        <Button variant="outline" className="border-0" data-testid="equipment-options">
           <Ellipsis />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="end">
         <DropdownMenuLabel>Actions</DropdownMenuLabel>
         <DropdownMenuGroup>
-          <DropdownMenuItem onClick={() => initEquipmentUpsertDialog(props)}>
+          <DropdownMenuItem onClick={() => initEquipmentUpsertDialog(props)} data-testid="equipment-edit">
             Edit
           </DropdownMenuItem>
           <DropdownMenuSeparator />

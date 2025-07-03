@@ -10,7 +10,7 @@
     "./rpc": "./src/lib/rpc.ts"
   },
   "scripts": {
-    "build": "npx tsc && tsc-alias",
+    "build": "rm -Rvf ./dist && npx tsc && tsc-alias",
     "dev": "NODE_ENV=development nodemon --env-file=.env --exec tsx src/index.ts",
     "start": "NODE_ENV=production node --env-file=.env dist/src/index.js",
     "push": "drizzle-kit push",

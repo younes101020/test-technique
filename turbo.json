@@ -12,15 +12,13 @@
       "persistent": true,
       "cache": false
     },
-    "start": {
+    "api#start": {
+      "dependsOn": ["build", "frontend#build"],
       "persistent": true,
       "cache": false
     },
-    "seed": {
-      "cache": false
-    },
-    "push": {
-      "cache": false
-    }
+    "test": {},
+    "seed": {},
+    "push": {}
   }
 }

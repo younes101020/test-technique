@@ -149,7 +149,7 @@ export function EquipmentForm() {
         <form.Subscribe
           selector={state => [state.canSubmit]}
           children={([canSubmit]) => (
-            <Button type="submit" disabled={!canSubmit}>
+            <Button type="submit" disabled={!canSubmit} data-testid="">
               Save changes
             </Button>
           )}
